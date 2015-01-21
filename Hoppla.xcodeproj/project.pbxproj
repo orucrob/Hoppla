@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3D8E96F1A6E6E6900A7EB90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8E96E1A6E6E6900A7EB90 /* AppDelegate.swift */; };
+		C3D8E9711A6E6E6900A7EB90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8E9701A6E6E6900A7EB90 /* ViewController.swift */; };
+		C3D8E9741A6E6E6900A7EB90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D8E9721A6E6E6900A7EB90 /* Main.storyboard */; };
+		C3D8E9761A6E6E6900A7EB90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D8E9751A6E6E6900A7EB90 /* Images.xcassets */; };
+		C3D8E9791A6E6E6900A7EB90 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D8E9771A6E6E6900A7EB90 /* LaunchScreen.xib */; };
+		C3D8E9851A6E6E6A00A7EB90 /* HopplaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8E9841A6E6E6A00A7EB90 /* HopplaTests.swift */; };
+		C3D8E98F1A6E6F0300A7EB90 /* HopplaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8E98E1A6E6F0300A7EB90 /* HopplaView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3D8E97F1A6E6E6A00A7EB90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D8E9611A6E6E6900A7EB90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3D8E9681A6E6E6900A7EB90;
+			remoteInfo = Hoppla;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3D8E9691A6E6E6900A7EB90 /* Hoppla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoppla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D8E96D1A6E6E6900A7EB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D8E96E1A6E6E6900A7EB90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3D8E9701A6E6E6900A7EB90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3D8E9731A6E6E6900A7EB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3D8E9751A6E6E6900A7EB90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3D8E9781A6E6E6900A7EB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C3D8E97E1A6E6E6A00A7EB90 /* HopplaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HopplaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D8E9831A6E6E6A00A7EB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D8E9841A6E6E6A00A7EB90 /* HopplaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopplaTests.swift; sourceTree = "<group>"; };
+		C3D8E98E1A6E6F0300A7EB90 /* HopplaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3D8E9661A6E6E6900A7EB90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D8E97B1A6E6E6A00A7EB90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3D8E9601A6E6E6900A7EB90 = {
+			isa = PBXGroup;
+			children = (
+				C3D8E96B1A6E6E6900A7EB90 /* Hoppla */,
+				C3D8E9811A6E6E6A00A7EB90 /* HopplaTests */,
+				C3D8E96A1A6E6E6900A7EB90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3D8E96A1A6E6E6900A7EB90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8E9691A6E6E6900A7EB90 /* Hoppla.app */,
+				C3D8E97E1A6E6E6A00A7EB90 /* HopplaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3D8E96B1A6E6E6900A7EB90 /* Hoppla */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8E96E1A6E6E6900A7EB90 /* AppDelegate.swift */,
+				C3D8E9701A6E6E6900A7EB90 /* ViewController.swift */,
+				C3D8E9721A6E6E6900A7EB90 /* Main.storyboard */,
+				C3D8E9751A6E6E6900A7EB90 /* Images.xcassets */,
+				C3D8E9771A6E6E6900A7EB90 /* LaunchScreen.xib */,
+				C3D8E96C1A6E6E6900A7EB90 /* Supporting Files */,
+				C3D8E98E1A6E6F0300A7EB90 /* HopplaView.swift */,
+			);
+			path = Hoppla;
+			sourceTree = "<group>";
+		};
+		C3D8E96C1A6E6E6900A7EB90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8E96D1A6E6E6900A7EB90 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3D8E9811A6E6E6A00A7EB90 /* HopplaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8E9841A6E6E6A00A7EB90 /* HopplaTests.swift */,
+				C3D8E9821A6E6E6A00A7EB90 /* Supporting Files */,
+			);
+			path = HopplaTests;
+			sourceTree = "<group>";
+		};
+		C3D8E9821A6E6E6A00A7EB90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3D8E9831A6E6E6A00A7EB90 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3D8E9681A6E6E6900A7EB90 /* Hoppla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D8E9881A6E6E6A00A7EB90 /* Build configuration list for PBXNativeTarget "Hoppla" */;
+			buildPhases = (
+				C3D8E9651A6E6E6900A7EB90 /* Sources */,
+				C3D8E9661A6E6E6900A7EB90 /* Frameworks */,
+				C3D8E9671A6E6E6900A7EB90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hoppla;
+			productName = Hoppla;
+			productReference = C3D8E9691A6E6E6900A7EB90 /* Hoppla.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3D8E97D1A6E6E6A00A7EB90 /* HopplaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D8E98B1A6E6E6A00A7EB90 /* Build configuration list for PBXNativeTarget "HopplaTests" */;
+			buildPhases = (
+				C3D8E97A1A6E6E6A00A7EB90 /* Sources */,
+				C3D8E97B1A6E6E6A00A7EB90 /* Frameworks */,
+				C3D8E97C1A6E6E6A00A7EB90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3D8E9801A6E6E6A00A7EB90 /* PBXTargetDependency */,
+			);
+			name = HopplaTests;
+			productName = HopplaTests;
+			productReference = C3D8E97E1A6E6E6A00A7EB90 /* HopplaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3D8E9611A6E6E6900A7EB90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Itinn;
+				TargetAttributes = {
+					C3D8E9681A6E6E6900A7EB90 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					C3D8E97D1A6E6E6A00A7EB90 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = C3D8E9681A6E6E6900A7EB90;
+					};
+				};
+			};
+			buildConfigurationList = C3D8E9641A6E6E6900A7EB90 /* Build configuration list for PBXProject "Hoppla" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3D8E9601A6E6E6900A7EB90;
+			productRefGroup = C3D8E96A1A6E6E6900A7EB90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3D8E9681A6E6E6900A7EB90 /* Hoppla */,
+				C3D8E97D1A6E6E6A00A7EB90 /* HopplaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3D8E9671A6E6E6900A7EB90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D8E9741A6E6E6900A7EB90 /* Main.storyboard in Resources */,
+				C3D8E9791A6E6E6900A7EB90 /* LaunchScreen.xib in Resources */,
+				C3D8E9761A6E6E6900A7EB90 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D8E97C1A6E6E6A00A7EB90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3D8E9651A6E6E6900A7EB90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D8E9711A6E6E6900A7EB90 /* ViewController.swift in Sources */,
+				C3D8E96F1A6E6E6900A7EB90 /* AppDelegate.swift in Sources */,
+				C3D8E98F1A6E6F0300A7EB90 /* HopplaView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D8E97A1A6E6E6A00A7EB90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D8E9851A6E6E6A00A7EB90 /* HopplaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3D8E9801A6E6E6A00A7EB90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3D8E9681A6E6E6900A7EB90 /* Hoppla */;
+			targetProxy = C3D8E97F1A6E6E6A00A7EB90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3D8E9721A6E6E6900A7EB90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D8E9731A6E6E6900A7EB90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3D8E9771A6E6E6900A7EB90 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D8E9781A6E6E6900A7EB90 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3D8E9861A6E6E6A00A7EB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3D8E9871A6E6E6A00A7EB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3D8E9891A6E6E6A00A7EB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hoppla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3D8E98A1A6E6E6A00A7EB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hoppla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C3D8E98C1A6E6E6A00A7EB90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HopplaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hoppla.app/Hoppla";
+			};
+			name = Debug;
+		};
+		C3D8E98D1A6E6E6A00A7EB90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HopplaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hoppla.app/Hoppla";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3D8E9641A6E6E6900A7EB90 /* Build configuration list for PBXProject "Hoppla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D8E9861A6E6E6A00A7EB90 /* Debug */,
+				C3D8E9871A6E6E6A00A7EB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D8E9881A6E6E6A00A7EB90 /* Build configuration list for PBXNativeTarget "Hoppla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D8E9891A6E6E6A00A7EB90 /* Debug */,
+				C3D8E98A1A6E6E6A00A7EB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3D8E98B1A6E6E6A00A7EB90 /* Build configuration list for PBXNativeTarget "HopplaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D8E98C1A6E6E6A00A7EB90 /* Debug */,
+				C3D8E98D1A6E6E6A00A7EB90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3D8E9611A6E6E6900A7EB90 /* Project object */;
+}
