@@ -1,41 +1,551 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pXs-1Q-XHM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Hoppla Image Ctrl-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Hoppla" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="HopplaImageCtrl" customModule="Hoppla" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDe-oL-D2T" customClass="HopplaView" customModule="Hoppla" customModuleProvider="target">
-                                <rect key="frame" x="100" y="100" width="400" height="400"/>
-                                <color key="backgroundColor" red="1" green="0.97339201009999998" blue="0.5031842607" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19w-Bu-ALX" customClass="HopplaImage" customModule="Hoppla" customModuleProvider="target">
+                                <rect key="frame" x="110" y="234" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="O51-9Q-rMD"/>
+                                    <constraint firstAttribute="width" constant="100" id="oUL-g0-vA3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="star.png"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="labelHidden" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imagePadding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="blurEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Qjp-tl-z2j" appends="YES" id="19K-mk-Uw9"/>
+                                </connections>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1qc-6K-IlQ">
+                                <rect key="frame" x="250" y="269" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="q3F-90-HR4"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sW3-v4-pOK" customClass="HopplaImage" customModule="Hoppla" customModuleProvider="target">
+                                <rect key="frame" x="20" y="259" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="JJ3-BU-ZCf"/>
+                                    <constraint firstAttribute="height" constant="50" id="NY0-pV-zuf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="star.png"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imagePadding">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="labelHidden" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="blurEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Sw3-dL-70h" appends="YES" id="YGf-8p-k5D"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeU-hw-HiM" customClass="ManualView" customModule="Hoppla" customModuleProvider="target">
+                                <rect key="frame" x="115" y="114" width="90" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="isU-sd-j9E"/>
+                                    <constraint firstAttribute="height" constant="90" id="zIg-Rt-Vnv"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDe-oL-D2T" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="2/3" id="7X1-4Y-iBX"/>
-                            <constraint firstAttribute="centerY" secondItem="NDe-oL-D2T" secondAttribute="centerY" id="Spc-d3-NMH"/>
-                            <constraint firstAttribute="centerX" secondItem="NDe-oL-D2T" secondAttribute="centerX" id="qoS-rt-joM"/>
-                            <constraint firstItem="NDe-oL-D2T" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" multiplier="2/3" priority="999" id="wQu-sa-SDi"/>
+                            <constraint firstItem="1qc-6K-IlQ" firstAttribute="centerY" secondItem="19w-Bu-ALX" secondAttribute="centerY" id="BPb-xc-I9g"/>
+                            <constraint firstItem="19w-Bu-ALX" firstAttribute="centerY" secondItem="sW3-v4-pOK" secondAttribute="centerY" id="Dx7-hh-gH8"/>
+                            <constraint firstAttribute="centerY" secondItem="19w-Bu-ALX" secondAttribute="centerY" constant="244" id="KDk-8b-q9o"/>
+                            <constraint firstAttribute="centerX" secondItem="JeU-hw-HiM" secondAttribute="centerX" id="Lu2-HT-bvc"/>
+                            <constraint firstItem="1qc-6K-IlQ" firstAttribute="leading" secondItem="19w-Bu-ALX" secondAttribute="trailing" constant="40" id="QmG-wH-R7d"/>
+                            <constraint firstAttribute="centerX" secondItem="19w-Bu-ALX" secondAttribute="centerX" id="f8C-pP-7qT"/>
+                            <constraint firstAttribute="centerY" secondItem="19w-Bu-ALX" secondAttribute="centerY" id="gRy-in-9do"/>
+                            <constraint firstItem="19w-Bu-ALX" firstAttribute="leading" secondItem="sW3-v4-pOK" secondAttribute="trailing" constant="40" id="jUh-M5-LdZ"/>
+                            <constraint firstItem="19w-Bu-ALX" firstAttribute="top" secondItem="JeU-hw-HiM" secondAttribute="bottom" constant="30" id="rVg-0i-XEs"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KDk-8b-q9o"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="R4J-zD-01a"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="hoppla" destination="NDe-oL-D2T" id="epq-c0-m6g"/>
+                        <outlet property="hopplaImg" destination="19w-Bu-ALX" id="m5n-ZR-3hl"/>
+                        <outlet property="hopplaImgSmall" destination="sW3-v4-pOK" id="dIe-0W-eve"/>
+                        <outlet property="manView" destination="JeU-hw-HiM" id="Nap-r8-BeW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Qjp-tl-z2j">
+                    <connections>
+                        <action selector="tapImgAction:" destination="vXZ-lx-hvc" id="0uj-tZ-fm8"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Sw3-dL-70h">
+                    <connections>
+                        <action selector="tapImgSmallAction:" destination="vXZ-lx-hvc" id="X6p-jC-Xra"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="375" y="410"/>
+        </scene>
+        <!--Hoppla View Ctrl-->
+        <scene sceneID="zkr-1N-v4X">
+            <objects>
+                <viewController id="6Hn-It-HTo" customClass="HopplaViewCtrl" customModule="Hoppla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4pM-X9-PM9"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Rw-Cp-A52"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QL9-Rt-Jq2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwk-wr-qkq" customClass="HopplaView" customModule="Hoppla" customModuleProvider="target">
+                                <rect key="frame" x="36" y="84" width="248" height="215"/>
+                                <color key="backgroundColor" red="1" green="0.97339201009999998" blue="0.5031842607" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="999" constant="215" placeholder="YES" id="Fwv-yo-5Nt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="ggW-hL-Osh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rows">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ggW-hL-Osh"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CL-Hc-A8K" customClass="HopplaButton" customModule="Hoppla" customModuleProvider="target">
+                                <rect key="frame" x="120" y="301" width="81" height="34"/>
+                                <state key="normal" title="Collapse">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="collapseAction:" destination="6Hn-It-HTo" eventType="touchUpInside" id="74V-Kv-1NG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gwk-wr-qkq" firstAttribute="leading" secondItem="QL9-Rt-Jq2" secondAttribute="leadingMargin" id="1ec-eb-QON"/>
+                            <constraint firstItem="7CL-Hc-A8K" firstAttribute="top" secondItem="gwk-wr-qkq" secondAttribute="bottom" constant="2" id="D9j-Sx-RsT"/>
+                            <constraint firstAttribute="centerX" secondItem="gwk-wr-qkq" secondAttribute="centerX" constant="-0.5" id="EVx-Oo-Q41"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gwk-wr-qkq" secondAttribute="trailing" constant="20" id="IBu-jk-GpK"/>
+                            <constraint firstItem="gwk-wr-qkq" firstAttribute="centerX" secondItem="7CL-Hc-A8K" secondAttribute="centerX" id="SPk-lW-1v2"/>
+                            <constraint firstItem="gwk-wr-qkq" firstAttribute="leading" secondItem="QL9-Rt-Jq2" secondAttribute="leadingMargin" constant="20" id="cvV-XD-PPZ"/>
+                            <constraint firstItem="gwk-wr-qkq" firstAttribute="top" secondItem="4pM-X9-PM9" secondAttribute="bottom" constant="20" id="gCR-ux-8Xq"/>
+                            <constraint firstAttribute="centerY" secondItem="gwk-wr-qkq" secondAttribute="centerY" constant="0.5" id="wDX-8e-gLP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1ec-eb-QON"/>
+                                <exclude reference="EVx-Oo-Q41"/>
+                                <exclude reference="wDX-8e-gLP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="hopplaView" destination="gwk-wr-qkq" id="Db5-qy-L6P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ylu-6X-kBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821" y="410"/>
+        </scene>
+        <!--Hoppla Summary Board Ctrl-->
+        <scene sceneID="R0F-Cl-l4V">
+            <objects>
+                <viewController id="Wux-mE-MS0" customClass="HopplaSummaryBoardCtrl" customModule="Hoppla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4ZQ-de-TxV"/>
+                        <viewControllerLayoutGuide type="bottom" id="yy5-J8-gNy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="luB-uS-kBn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mdn-bD-7bj" customClass="HopplaSummaryBoard" customModule="Hoppla" customModuleProvider="target">
+                                <rect key="frame" x="36" y="84" width="248" height="180"/>
+                                <color key="backgroundColor" red="0.62825481599718569" green="0.95226556313434474" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="jVQ-V8-FYY"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h84-67-uaQ">
+                                <rect key="frame" x="141" y="272" width="39" height="30"/>
+                                <state key="normal" title="Detail">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openCloseAction:" destination="Wux-mE-MS0" eventType="touchUpInside" id="iR9-Er-ifI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h84-67-uaQ" firstAttribute="top" secondItem="Mdn-bD-7bj" secondAttribute="bottom" constant="8" symbolic="YES" id="6i9-MI-Uxa"/>
+                            <constraint firstItem="Mdn-bD-7bj" firstAttribute="leading" secondItem="luB-uS-kBn" secondAttribute="leadingMargin" constant="20" id="XiE-pO-yaU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mdn-bD-7bj" secondAttribute="trailing" constant="20" id="hpP-fy-uPO"/>
+                            <constraint firstItem="Mdn-bD-7bj" firstAttribute="top" secondItem="4ZQ-de-TxV" secondAttribute="bottom" constant="20" id="iiG-IA-T29"/>
+                            <constraint firstItem="h84-67-uaQ" firstAttribute="centerX" secondItem="Mdn-bD-7bj" secondAttribute="centerX" id="olg-Mx-9gu"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="hopplaSummary" destination="Mdn-bD-7bj" id="1uV-Wc-BXo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zyr-p5-O7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821" y="1071"/>
+        </scene>
+        <!--Hoppla Settings List Ctrl-->
+        <scene sceneID="I55-at-9L4">
+            <objects>
+                <viewController id="y0C-AL-VuY" customClass="HopplaSettingsListCtrl" customModule="Hoppla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K7W-8u-ZMh"/>
+                        <viewControllerLayoutGuide type="bottom" id="K7I-jB-glb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iEs-5v-Vcx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94x-fK-3s7" customClass="HopplaList" customModule="Hoppla" customModuleProvider="target">
+                                <rect key="frame" x="26" y="74" width="268" height="484"/>
+                                <color key="backgroundColor" red="1" green="0.885795716660713" blue="0.77619950229616408" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="94x-fK-3s7" firstAttribute="leading" secondItem="iEs-5v-Vcx" secondAttribute="leadingMargin" constant="10" id="IRZ-Z5-tcF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="94x-fK-3s7" secondAttribute="trailing" constant="10" id="UtQ-MZ-9ti"/>
+                            <constraint firstItem="94x-fK-3s7" firstAttribute="top" secondItem="K7W-8u-ZMh" secondAttribute="bottom" constant="10" id="gLs-Nm-e5x"/>
+                            <constraint firstItem="K7I-jB-glb" firstAttribute="top" secondItem="94x-fK-3s7" secondAttribute="bottom" constant="10" id="vNo-0k-5AN"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="hopplaList" destination="94x-fK-3s7" id="huv-k9-a7g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1MK-He-Ky6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="1071"/>
+        </scene>
+        <!--Hoppla Board Ctrl-->
+        <scene sceneID="Ja1-XM-9r5">
+            <objects>
+                <viewController id="Shg-Ju-FoA" customClass="HopplaBoardCtrl" customModule="Hoppla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ypj-Yd-kyW"/>
+                        <viewControllerLayoutGuide type="bottom" id="WUa-zY-blj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bzV-rB-m7a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Tl-h9-i9N" customClass="HopplaBoard" customModule="Hoppla" customModuleProvider="target">
+                                <rect key="frame" x="16" y="97" width="288" height="150"/>
+                                <color key="backgroundColor" red="0.99226492639999997" green="0.6312813759" blue="0.6408491731" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="VIJ-wc-teg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="levels">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="indexesInLevel">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2R-WM-MQE">
+                                <rect key="frame" x="141" y="255" width="39" height="30"/>
+                                <state key="normal" title="Detail">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openCloseAction:" destination="Shg-Ju-FoA" eventType="touchUpInside" id="amM-Lm-6mc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z2R-WM-MQE" firstAttribute="centerX" secondItem="4Tl-h9-i9N" secondAttribute="centerX" id="1iy-rI-Jls"/>
+                            <constraint firstItem="4Tl-h9-i9N" firstAttribute="trailing" secondItem="bzV-rB-m7a" secondAttribute="trailingMargin" id="CI9-Zr-g3n"/>
+                            <constraint firstItem="4Tl-h9-i9N" firstAttribute="top" secondItem="ypj-Yd-kyW" secondAttribute="bottom" constant="33" id="U8V-fI-elk"/>
+                            <constraint firstItem="Z2R-WM-MQE" firstAttribute="top" secondItem="4Tl-h9-i9N" secondAttribute="bottom" constant="8" symbolic="YES" id="ZRs-So-TQ7"/>
+                            <constraint firstItem="4Tl-h9-i9N" firstAttribute="leading" secondItem="bzV-rB-m7a" secondAttribute="leadingMargin" id="bhb-fc-sI4"/>
+                            <constraint firstItem="Z2R-WM-MQE" firstAttribute="width" secondItem="4Tl-h9-i9N" secondAttribute="width" id="ygF-bu-xXN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ygF-bu-xXN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="hopplaView" destination="4Tl-h9-i9N" id="gWf-Zo-E4y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQc-rX-uxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="410"/>
+        </scene>
+        <!--Hoppla List Ctrl-->
+        <scene sceneID="qjZ-tF-3LH">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ucf-pZ-qJb" customClass="HopplaListCtrl" customModule="Hoppla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GRn-Ph-Hhb"/>
+                        <viewControllerLayoutGuide type="bottom" id="052-gD-P4N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dNS-Y2-sZA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KFa-oe-7QC" customClass="HopplaList" customModule="Hoppla" customModuleProvider="target">
+                                <rect key="frame" x="46" y="94" width="228" height="444"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="052-gD-P4N" firstAttribute="top" secondItem="KFa-oe-7QC" secondAttribute="bottom" constant="30" id="9oW-iY-Asa"/>
+                            <constraint firstItem="KFa-oe-7QC" firstAttribute="leading" secondItem="dNS-Y2-sZA" secondAttribute="leadingMargin" id="Bj0-Mm-vUu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KFa-oe-7QC" secondAttribute="trailing" constant="30" id="EWn-d5-8tT"/>
+                            <constraint firstItem="KFa-oe-7QC" firstAttribute="leading" secondItem="dNS-Y2-sZA" secondAttribute="leadingMargin" constant="30" id="gp1-CZ-dOI"/>
+                            <constraint firstItem="KFa-oe-7QC" firstAttribute="top" secondItem="GRn-Ph-Hhb" secondAttribute="bottom" constant="30" id="hHv-3v-PHH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Bj0-Mm-vUu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="hopplaList" destination="KFa-oe-7QC" id="1qB-Gq-lad"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qbb-ib-u7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581" y="410"/>
+        </scene>
+        <!--Hoppla Double View Ctrl-->
+        <scene sceneID="Svs-lj-Bqa">
+            <objects>
+                <viewController id="sOR-Gg-Kf0" customClass="HopplaDoubleViewCtrl" customModule="Hoppla" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FX4-IJ-ye5"/>
+                        <viewControllerLayoutGuide type="bottom" id="PXf-w4-6u1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zwe-Z7-PMz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYz-a4-C5O" customClass="HopplaDoubleView" customModule="Hoppla" customModuleProvider="target">
+                                <rect key="frame" x="36" y="84" width="248" height="300"/>
+                                <color key="backgroundColor" red="0.47208753180436192" green="0.63234095889278408" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" placeholder="YES" id="rPB-tk-8Pz"/>
+                                </constraints>
+                            </view>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tB1-St-MR2">
+                                <rect key="frame" x="136" y="412" width="51" height="31"/>
+                                <connections>
+                                    <action selector="doubleSwitchAction:" destination="sOR-Gg-Kf0" eventType="valueChanged" id="A3k-8S-c4X"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLI-F9-VLR">
+                                <rect key="frame" x="45" y="417" width="60" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tB1-St-MR2" firstAttribute="top" secondItem="eYz-a4-C5O" secondAttribute="bottom" constant="28" id="I42-bu-uAx"/>
+                            <constraint firstAttribute="centerX" secondItem="tB1-St-MR2" secondAttribute="centerX" constant="-0.5" id="JkB-zo-lXL"/>
+                            <constraint firstItem="eYz-a4-C5O" firstAttribute="leading" secondItem="zwe-Z7-PMz" secondAttribute="leadingMargin" constant="20" id="UJT-FT-48c"/>
+                            <constraint firstItem="eYz-a4-C5O" firstAttribute="top" secondItem="FX4-IJ-ye5" secondAttribute="bottom" constant="20" id="dcX-Rm-4c1"/>
+                            <constraint firstItem="tB1-St-MR2" firstAttribute="centerY" secondItem="CLI-F9-VLR" secondAttribute="centerY" id="iOQ-Od-VDU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eYz-a4-C5O" secondAttribute="trailing" constant="20" id="pvT-fE-wbF"/>
+                            <constraint firstItem="tB1-St-MR2" firstAttribute="leading" secondItem="CLI-F9-VLR" secondAttribute="trailing" constant="31" id="uE7-nL-OoE"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="doubleSwitch" destination="tB1-St-MR2" id="fmV-AT-Ke9"/>
+                        <outlet property="hdv" destination="eYz-a4-C5O" id="fpT-De-2qz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Itq-ly-Rd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976" y="410"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0dI-U9-khP">
+            <objects>
+                <viewController id="yfc-5B-7gD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RrL-YR-6gZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="i0z-ca-j1f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vIz-Ed-PPr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XU-Ud-iSn">
+                                <rect key="frame" x="112" y="72" width="96" height="30"/>
+                                <state key="normal" title="Hoppla Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="Tsy-0r-9Ab"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALS-0o-a8O">
+                                <rect key="frame" x="117" y="110" width="87" height="30"/>
+                                <state key="normal" title="Hoppla View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6Hn-It-HTo" kind="show" id="dB2-Gs-IkY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRb-VF-RpZ">
+                                <rect key="frame" x="112" y="148" width="96" height="30"/>
+                                <state key="normal" title="Hoppla Board">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Shg-Ju-FoA" kind="show" id="yCM-rH-9xI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLV-qx-jVO">
+                                <rect key="frame" x="121" y="186" width="79" height="30"/>
+                                <state key="normal" title="Hoppla List">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ucf-pZ-qJb" kind="show" id="Lg7-mA-s3Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4r-Hg-xi4">
+                                <rect key="frame" x="90" y="224" width="140" height="30"/>
+                                <state key="normal" title="Hoppla Double View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sOR-Gg-Kf0" kind="show" id="PzS-ts-sA3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7q-l8-lR9">
+                                <rect key="frame" x="78" y="262" width="165" height="30"/>
+                                <state key="normal" title="Hoppla Summary Board">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Wux-mE-MS0" kind="show" id="NmT-lt-IxK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej5-zE-aRg">
+                                <rect key="frame" x="91" y="300" width="139" height="30"/>
+                                <state key="normal" title="Hoppla Settings List">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y0C-AL-VuY" kind="show" id="85w-5V-LHf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ALS-0o-a8O" firstAttribute="centerX" secondItem="SRb-VF-RpZ" secondAttribute="centerX" id="2XQ-eI-xYe"/>
+                            <constraint firstItem="7XU-Ud-iSn" firstAttribute="top" secondItem="RrL-YR-6gZ" secondAttribute="bottom" constant="8" symbolic="YES" id="4tX-Fj-PFk"/>
+                            <constraint firstAttribute="centerX" secondItem="e7q-l8-lR9" secondAttribute="centerX" id="Ae5-Vd-r2v"/>
+                            <constraint firstAttribute="centerX" secondItem="Ej5-zE-aRg" secondAttribute="centerX" id="BTv-Xj-9zS"/>
+                            <constraint firstAttribute="centerX" secondItem="ALS-0o-a8O" secondAttribute="centerX" id="Grt-gg-tie"/>
+                            <constraint firstItem="C4r-Hg-xi4" firstAttribute="top" secondItem="rLV-qx-jVO" secondAttribute="bottom" constant="8" symbolic="YES" id="HRq-uv-76C"/>
+                            <constraint firstItem="rLV-qx-jVO" firstAttribute="baseline" secondItem="SRb-VF-RpZ" secondAttribute="baseline" constant="27" id="Q9I-pC-hqW"/>
+                            <constraint firstItem="SRb-VF-RpZ" firstAttribute="top" secondItem="ALS-0o-a8O" secondAttribute="bottom" constant="8" symbolic="YES" id="TB3-ab-BNU"/>
+                            <constraint firstAttribute="centerX" secondItem="7XU-Ud-iSn" secondAttribute="centerX" id="W8H-Zo-IbQ"/>
+                            <constraint firstAttribute="centerX" secondItem="C4r-Hg-xi4" secondAttribute="centerX" id="cm5-Tw-WFt"/>
+                            <constraint firstItem="e7q-l8-lR9" firstAttribute="top" secondItem="C4r-Hg-xi4" secondAttribute="bottom" constant="8" symbolic="YES" id="gzO-iz-9Xd"/>
+                            <constraint firstItem="Ej5-zE-aRg" firstAttribute="top" secondItem="e7q-l8-lR9" secondAttribute="bottom" constant="8" symbolic="YES" id="kKK-jJ-fLd"/>
+                            <constraint firstItem="rLV-qx-jVO" firstAttribute="top" secondItem="SRb-VF-RpZ" secondAttribute="bottom" constant="8" symbolic="YES" id="mqW-rZ-VW7"/>
+                            <constraint firstItem="ALS-0o-a8O" firstAttribute="top" secondItem="7XU-Ud-iSn" secondAttribute="bottom" constant="8" symbolic="YES" id="nTm-yN-slz"/>
+                            <constraint firstItem="rLV-qx-jVO" firstAttribute="centerX" secondItem="SRb-VF-RpZ" secondAttribute="centerX" id="ncw-c2-Hfs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Q9I-pC-hqW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="OUo-DM-Uds"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctX-hm-aJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821" y="-256"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WyY-SR-90b">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pXs-1Q-XHM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JzM-E2-i4w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yfc-5B-7gD" kind="relationship" relationship="rootViewController" id="vGD-z8-mRb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c55-Vb-jrx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="-263"/>
         </scene>
     </scenes>
 </document>

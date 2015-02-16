@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C33B9BB71A72725100171A7A /* HopplaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33B9BB61A72725100171A7A /* HopplaImage.swift */; };
+		C33B9BB91A7273DF00171A7A /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = C33B9BB81A7273DF00171A7A /* star.png */; };
+		C358BF531A81FDAA005AD1E2 /* HopplaDoubleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358BF521A81FDAA005AD1E2 /* HopplaDoubleView.swift */; };
+		C358BF551A82083C005AD1E2 /* HopplaDoubleViewCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358BF541A82083C005AD1E2 /* HopplaDoubleViewCtrl.swift */; };
+		C358BF591A834FB1005AD1E2 /* HopplaSummaryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358BF581A834FB1005AD1E2 /* HopplaSummaryBoard.swift */; };
+		C358BF5B1A8355F0005AD1E2 /* HopplaSummaryBoardCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358BF5A1A8355F0005AD1E2 /* HopplaSummaryBoardCtrl.swift */; };
+		C358BF611A838AE8005AD1E2 /* HopplaSettingsListCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358BF601A838AE8005AD1E2 /* HopplaSettingsListCtrl.swift */; };
+		C358BF631A84BDDA005AD1E2 /* HopplaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358BF621A84BDDA005AD1E2 /* HopplaButton.swift */; };
+		C358BF651A84EED1005AD1E2 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C358BF641A84EED1005AD1E2 /* fontawesome-webfont.ttf */; };
+		C35EE70C1A766D9300E4F940 /* HopplaViewCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE70B1A766D9300E4F940 /* HopplaViewCtrl.swift */; };
+		C35EE70E1A76800E00E4F940 /* HopplaBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE70D1A76800E00E4F940 /* HopplaBoard.swift */; };
+		C35EE7101A777C3900E4F940 /* HopplaBoardCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35EE70F1A777C3900E4F940 /* HopplaBoardCtrl.swift */; };
 		C3D8E96F1A6E6E6900A7EB90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8E96E1A6E6E6900A7EB90 /* AppDelegate.swift */; };
-		C3D8E9711A6E6E6900A7EB90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8E9701A6E6E6900A7EB90 /* ViewController.swift */; };
+		C3D8E9711A6E6E6900A7EB90 /* HopplaImageCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8E9701A6E6E6900A7EB90 /* HopplaImageCtrl.swift */; };
 		C3D8E9741A6E6E6900A7EB90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D8E9721A6E6E6900A7EB90 /* Main.storyboard */; };
 		C3D8E9761A6E6E6900A7EB90 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D8E9751A6E6E6900A7EB90 /* Images.xcassets */; };
 		C3D8E9791A6E6E6900A7EB90 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D8E9771A6E6E6900A7EB90 /* LaunchScreen.xib */; };
 		C3D8E9851A6E6E6A00A7EB90 /* HopplaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8E9841A6E6E6A00A7EB90 /* HopplaTests.swift */; };
 		C3D8E98F1A6E6F0300A7EB90 /* HopplaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D8E98E1A6E6F0300A7EB90 /* HopplaView.swift */; };
+		C3E20A931A784AA500177968 /* HopplaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E20A921A784AA500177968 /* HopplaList.swift */; };
+		C3E20A951A78C22400177968 /* HopplaListCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E20A941A78C22400177968 /* HopplaListCtrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +41,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C33B9BB61A72725100171A7A /* HopplaImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaImage.swift; sourceTree = "<group>"; };
+		C33B9BB81A7273DF00171A7A /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		C358BF521A81FDAA005AD1E2 /* HopplaDoubleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaDoubleView.swift; sourceTree = "<group>"; };
+		C358BF541A82083C005AD1E2 /* HopplaDoubleViewCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaDoubleViewCtrl.swift; sourceTree = "<group>"; };
+		C358BF581A834FB1005AD1E2 /* HopplaSummaryBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaSummaryBoard.swift; sourceTree = "<group>"; };
+		C358BF5A1A8355F0005AD1E2 /* HopplaSummaryBoardCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaSummaryBoardCtrl.swift; sourceTree = "<group>"; };
+		C358BF601A838AE8005AD1E2 /* HopplaSettingsListCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaSettingsListCtrl.swift; sourceTree = "<group>"; };
+		C358BF621A84BDDA005AD1E2 /* HopplaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaButton.swift; sourceTree = "<group>"; };
+		C358BF641A84EED1005AD1E2 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		C35EE70B1A766D9300E4F940 /* HopplaViewCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaViewCtrl.swift; sourceTree = "<group>"; };
+		C35EE70D1A76800E00E4F940 /* HopplaBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaBoard.swift; sourceTree = "<group>"; };
+		C35EE70F1A777C3900E4F940 /* HopplaBoardCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaBoardCtrl.swift; sourceTree = "<group>"; };
 		C3D8E9691A6E6E6900A7EB90 /* Hoppla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hoppla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D8E96D1A6E6E6900A7EB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D8E96E1A6E6E6900A7EB90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3D8E9701A6E6E6900A7EB90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3D8E9701A6E6E6900A7EB90 /* HopplaImageCtrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopplaImageCtrl.swift; sourceTree = "<group>"; };
 		C3D8E9731A6E6E6900A7EB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3D8E9751A6E6E6900A7EB90 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C3D8E9781A6E6E6900A7EB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -38,6 +64,8 @@
 		C3D8E9831A6E6E6A00A7EB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3D8E9841A6E6E6A00A7EB90 /* HopplaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopplaTests.swift; sourceTree = "<group>"; };
 		C3D8E98E1A6E6F0300A7EB90 /* HopplaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaView.swift; sourceTree = "<group>"; };
+		C3E20A921A784AA500177968 /* HopplaList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaList.swift; sourceTree = "<group>"; };
+		C3E20A941A78C22400177968 /* HopplaListCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HopplaListCtrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +107,27 @@
 		C3D8E96B1A6E6E6900A7EB90 /* Hoppla */ = {
 			isa = PBXGroup;
 			children = (
+				C358BF641A84EED1005AD1E2 /* fontawesome-webfont.ttf */,
+				C33B9BB81A7273DF00171A7A /* star.png */,
 				C3D8E96E1A6E6E6900A7EB90 /* AppDelegate.swift */,
-				C3D8E9701A6E6E6900A7EB90 /* ViewController.swift */,
 				C3D8E9721A6E6E6900A7EB90 /* Main.storyboard */,
 				C3D8E9751A6E6E6900A7EB90 /* Images.xcassets */,
 				C3D8E9771A6E6E6900A7EB90 /* LaunchScreen.xib */,
 				C3D8E96C1A6E6E6900A7EB90 /* Supporting Files */,
 				C3D8E98E1A6E6F0300A7EB90 /* HopplaView.swift */,
+				C35EE70B1A766D9300E4F940 /* HopplaViewCtrl.swift */,
+				C358BF521A81FDAA005AD1E2 /* HopplaDoubleView.swift */,
+				C358BF541A82083C005AD1E2 /* HopplaDoubleViewCtrl.swift */,
+				C33B9BB61A72725100171A7A /* HopplaImage.swift */,
+				C3D8E9701A6E6E6900A7EB90 /* HopplaImageCtrl.swift */,
+				C3E20A921A784AA500177968 /* HopplaList.swift */,
+				C3E20A941A78C22400177968 /* HopplaListCtrl.swift */,
+				C358BF601A838AE8005AD1E2 /* HopplaSettingsListCtrl.swift */,
+				C35EE70D1A76800E00E4F940 /* HopplaBoard.swift */,
+				C35EE70F1A777C3900E4F940 /* HopplaBoardCtrl.swift */,
+				C358BF581A834FB1005AD1E2 /* HopplaSummaryBoard.swift */,
+				C358BF5A1A8355F0005AD1E2 /* HopplaSummaryBoardCtrl.swift */,
+				C358BF621A84BDDA005AD1E2 /* HopplaButton.swift */,
 			);
 			path = Hoppla;
 			sourceTree = "<group>";
@@ -196,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D8E9741A6E6E6900A7EB90 /* Main.storyboard in Resources */,
+				C33B9BB91A7273DF00171A7A /* star.png in Resources */,
+				C358BF651A84EED1005AD1E2 /* fontawesome-webfont.ttf in Resources */,
 				C3D8E9791A6E6E6900A7EB90 /* LaunchScreen.xib in Resources */,
 				C3D8E9761A6E6E6900A7EB90 /* Images.xcassets in Resources */,
 			);
@@ -215,9 +259,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3D8E9711A6E6E6900A7EB90 /* ViewController.swift in Sources */,
+				C35EE70C1A766D9300E4F940 /* HopplaViewCtrl.swift in Sources */,
+				C358BF591A834FB1005AD1E2 /* HopplaSummaryBoard.swift in Sources */,
+				C35EE7101A777C3900E4F940 /* HopplaBoardCtrl.swift in Sources */,
+				C3D8E9711A6E6E6900A7EB90 /* HopplaImageCtrl.swift in Sources */,
+				C3E20A931A784AA500177968 /* HopplaList.swift in Sources */,
+				C35EE70E1A76800E00E4F940 /* HopplaBoard.swift in Sources */,
+				C358BF551A82083C005AD1E2 /* HopplaDoubleViewCtrl.swift in Sources */,
 				C3D8E96F1A6E6E6900A7EB90 /* AppDelegate.swift in Sources */,
 				C3D8E98F1A6E6F0300A7EB90 /* HopplaView.swift in Sources */,
+				C3E20A951A78C22400177968 /* HopplaListCtrl.swift in Sources */,
+				C358BF5B1A8355F0005AD1E2 /* HopplaSummaryBoardCtrl.swift in Sources */,
+				C33B9BB71A72725100171A7A /* HopplaImage.swift in Sources */,
+				C358BF631A84BDDA005AD1E2 /* HopplaButton.swift in Sources */,
+				C358BF531A81FDAA005AD1E2 /* HopplaDoubleView.swift in Sources */,
+				C358BF611A838AE8005AD1E2 /* HopplaSettingsListCtrl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +465,7 @@
 				C3D8E98A1A6E6E6A00A7EB90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3D8E98B1A6E6E6A00A7EB90 /* Build configuration list for PBXNativeTarget "HopplaTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +474,7 @@
 				C3D8E98D1A6E6E6A00A7EB90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

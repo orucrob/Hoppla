@@ -22,24 +22,20 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-
-
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+class HopplaDoubleViewCtrl : UIViewController {
+    
+    @IBOutlet weak var hdv: HopplaDoubleView!
+    @IBOutlet weak var doubleSwitch: UISwitch!
 
-    @IBOutlet weak var hoppla: HopplaView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        hoppla.value = 7
-        // Do any additional setup after loading the view, typically from a nib.
+        hdv.hopplaProvider = BasicHopplaDoubleViewProvider()
+        doubleSwitch.on = !hdv.onlySingle
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func doubleSwitchAction(sender: AnyObject) {
+        hdv.onlySingle = !doubleSwitch.on
     }
-
-
 }
-
